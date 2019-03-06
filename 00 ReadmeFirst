@@ -1,0 +1,56 @@
+This folder includes
+    Jupyter notebooks (01-05)
+    Apps folders (06-07) containing apps that can be started with: "python main.py"
+    Data folder containing data files used in the notebooks
+    Power Point/pdf  presentations (08)
+
+Documents are numbered from 01 to 08
+
+Happy reading !
+Gilles Bouyer
+
+
+01 Data Ingestion and Visualization.ipynb is the notebook gathering data
+It reads slogan from the file aug18slogan.xlsx stored in the data folder
+
+02 Predicting Company type by Slogans.ipynb contains various models
+To predict what type of business a company has based on its slogan
+It uses aug21afternoonslogan.xlsx file which is aug18 data repeated 4 times
+
+03 unsupervised learning for Slogans.ipynb run different kmeans algorithm 
+On aug18slogan.xlsx data and identified that grouping slogans in three  
+groups could provide some insights
+
+04 Topics_Modeling_In_Slogans1.ipynb. 
+Load aug18slogan.xlsx data in mongoldb
+	Read the data sequentially and run LDA on those with three topic.
+Run LSA on aug18slogan.xlsx
+
+05 Slogans_in_verses.ipynb. is the base for the code of the app
+It return a verse to a slogan
+Contains
+	 a class - that's a first -- to process text and vectorize.
+	 a function to create the class, 
+		process a mix of poem verses and one slogans in LSA
+		return the closest verse to the slogan
+	a second function to enter a slogan and return a verse
+
+
+06 Predictor folder including
+	main.py (run this to start the app)
+	py_GICS_Predict.py (includes the prediction model)
+	slogpred.p the pickled model
+	colonnes.p the picked vectorizing words
+	template folder including the index.html file for data entry
+	Readme to explain
+
+07 Sloganverses folder including
+	main.py (run this to start the app)
+	py_complete.py (search associated verse to entered slogan)
+	template folder including the index.html file for data entry
+	Readme to explain
+
+
+08 slogans analysis.pptx presentation in powerpoint format
+08 slogans analysis.pdf presentation in pdf format
+
